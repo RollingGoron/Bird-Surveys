@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F21E334B187B9E81000C3A9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21E334A187B9E81000C3A9A /* Foundation.framework */; };
+		F21E334D187B9E81000C3A9A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21E334C187B9E81000C3A9A /* CoreGraphics.framework */; };
+		F21E334F187B9E81000C3A9A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21E334E187B9E81000C3A9A /* UIKit.framework */; };
+		F21E3355187B9E81000C3A9A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F21E3353187B9E81000C3A9A /* InfoPlist.strings */; };
+		F21E3357187B9E81000C3A9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F21E3356187B9E81000C3A9A /* main.m */; };
+		F21E335B187B9E81000C3A9A /* birdsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F21E335A187B9E81000C3A9A /* birdsAppDelegate.m */; };
+		F21E335E187B9E81000C3A9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F21E335C187B9E81000C3A9A /* Main.storyboard */; };
+		F21E3361187B9E81000C3A9A /* birdsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F21E3360187B9E81000C3A9A /* birdsViewController.m */; };
+		F21E3363187B9E81000C3A9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F21E3362187B9E81000C3A9A /* Images.xcassets */; };
+		F21E336A187B9E81000C3A9A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21E3369187B9E81000C3A9A /* XCTest.framework */; };
+		F21E336B187B9E81000C3A9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21E334A187B9E81000C3A9A /* Foundation.framework */; };
+		F21E336C187B9E81000C3A9A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21E334E187B9E81000C3A9A /* UIKit.framework */; };
+		F21E3374187B9E81000C3A9A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F21E3372187B9E81000C3A9A /* InfoPlist.strings */; };
+		F21E3376187B9E81000C3A9A /* Bird_SurveysTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F21E3375187B9E81000C3A9A /* Bird_SurveysTests.m */; };
+		F21E3380187BA145000C3A9A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21E337F187BA145000C3A9A /* AVFoundation.framework */; };
+		F2A1412E188F75C8003EA26C /* birdAudioCall.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A1412D188F75C8003EA26C /* birdAudioCall.m */; };
+		F2A14130188F798A003EA26C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A1412F188F798A003EA26C /* CoreLocation.framework */; };
+		F2A14137188F7B24003EA26C /* SWFL.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F2A14135188F7B24003EA26C /* SWFL.mp3 */; };
+		F2A14138188F7B24003EA26C /* ybcu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F2A14136188F7B24003EA26C /* ybcu.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F21E336D187B9E81000C3A9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F21E333F187B9E81000C3A9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F21E3346187B9E81000C3A9A;
+			remoteInfo = "Bird Surveys";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F21E3347187B9E81000C3A9A /* Bird Surveys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bird Surveys.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F21E334A187B9E81000C3A9A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F21E334C187B9E81000C3A9A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F21E334E187B9E81000C3A9A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F21E3352187B9E81000C3A9A /* Bird Surveys-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Bird Surveys-Info.plist"; sourceTree = "<group>"; };
+		F21E3354187B9E81000C3A9A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F21E3356187B9E81000C3A9A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F21E3358187B9E81000C3A9A /* Bird Surveys-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bird Surveys-Prefix.pch"; sourceTree = "<group>"; };
+		F21E3359187B9E81000C3A9A /* birdsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = birdsAppDelegate.h; sourceTree = "<group>"; };
+		F21E335A187B9E81000C3A9A /* birdsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = birdsAppDelegate.m; sourceTree = "<group>"; };
+		F21E335D187B9E81000C3A9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F21E335F187B9E81000C3A9A /* birdsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = birdsViewController.h; sourceTree = "<group>"; };
+		F21E3360187B9E81000C3A9A /* birdsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = birdsViewController.m; sourceTree = "<group>"; };
+		F21E3362187B9E81000C3A9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F21E3368187B9E81000C3A9A /* Bird SurveysTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bird SurveysTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F21E3369187B9E81000C3A9A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F21E3371187B9E81000C3A9A /* Bird SurveysTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Bird SurveysTests-Info.plist"; sourceTree = "<group>"; };
+		F21E3373187B9E81000C3A9A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F21E3375187B9E81000C3A9A /* Bird_SurveysTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bird_SurveysTests.m; sourceTree = "<group>"; };
+		F21E337F187BA145000C3A9A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F2A1412C188F75C8003EA26C /* birdAudioCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = birdAudioCall.h; sourceTree = "<group>"; };
+		F2A1412D188F75C8003EA26C /* birdAudioCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = birdAudioCall.m; sourceTree = "<group>"; };
+		F2A1412F188F798A003EA26C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F2A14135188F7B24003EA26C /* SWFL.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = SWFL.mp3; path = birdCalls/SWFL.mp3; sourceTree = SOURCE_ROOT; };
+		F2A14136188F7B24003EA26C /* ybcu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ybcu.mp3; path = birdCalls/ybcu.mp3; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F21E3344187B9E81000C3A9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2A14130188F798A003EA26C /* CoreLocation.framework in Frameworks */,
+				F21E3380187BA145000C3A9A /* AVFoundation.framework in Frameworks */,
+				F21E334D187B9E81000C3A9A /* CoreGraphics.framework in Frameworks */,
+				F21E334F187B9E81000C3A9A /* UIKit.framework in Frameworks */,
+				F21E334B187B9E81000C3A9A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F21E3365187B9E81000C3A9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F21E336A187B9E81000C3A9A /* XCTest.framework in Frameworks */,
+				F21E336C187B9E81000C3A9A /* UIKit.framework in Frameworks */,
+				F21E336B187B9E81000C3A9A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F21E333E187B9E81000C3A9A = {
+			isa = PBXGroup;
+			children = (
+				F21E3350187B9E81000C3A9A /* Bird Surveys */,
+				F21E336F187B9E81000C3A9A /* Bird SurveysTests */,
+				F21E3349187B9E81000C3A9A /* Frameworks */,
+				F21E3348187B9E81000C3A9A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F21E3348187B9E81000C3A9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F21E3347187B9E81000C3A9A /* Bird Surveys.app */,
+				F21E3368187B9E81000C3A9A /* Bird SurveysTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F21E3349187B9E81000C3A9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2A1412F188F798A003EA26C /* CoreLocation.framework */,
+				F21E337F187BA145000C3A9A /* AVFoundation.framework */,
+				F21E334A187B9E81000C3A9A /* Foundation.framework */,
+				F21E334C187B9E81000C3A9A /* CoreGraphics.framework */,
+				F21E334E187B9E81000C3A9A /* UIKit.framework */,
+				F21E3369187B9E81000C3A9A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F21E3350187B9E81000C3A9A /* Bird Surveys */ = {
+			isa = PBXGroup;
+			children = (
+				F21E3359187B9E81000C3A9A /* birdsAppDelegate.h */,
+				F21E335A187B9E81000C3A9A /* birdsAppDelegate.m */,
+				F21E335C187B9E81000C3A9A /* Main.storyboard */,
+				F21E335F187B9E81000C3A9A /* birdsViewController.h */,
+				F21E3360187B9E81000C3A9A /* birdsViewController.m */,
+				F2A1412C188F75C8003EA26C /* birdAudioCall.h */,
+				F2A1412D188F75C8003EA26C /* birdAudioCall.m */,
+				F21E3362187B9E81000C3A9A /* Images.xcassets */,
+				F21E3351187B9E81000C3A9A /* Supporting Files */,
+			);
+			path = "Bird Surveys";
+			sourceTree = "<group>";
+		};
+		F21E3351187B9E81000C3A9A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2A14135188F7B24003EA26C /* SWFL.mp3 */,
+				F2A14136188F7B24003EA26C /* ybcu.mp3 */,
+				F21E3352187B9E81000C3A9A /* Bird Surveys-Info.plist */,
+				F21E3353187B9E81000C3A9A /* InfoPlist.strings */,
+				F21E3356187B9E81000C3A9A /* main.m */,
+				F21E3358187B9E81000C3A9A /* Bird Surveys-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F21E336F187B9E81000C3A9A /* Bird SurveysTests */ = {
+			isa = PBXGroup;
+			children = (
+				F21E3375187B9E81000C3A9A /* Bird_SurveysTests.m */,
+				F21E3370187B9E81000C3A9A /* Supporting Files */,
+			);
+			path = "Bird SurveysTests";
+			sourceTree = "<group>";
+		};
+		F21E3370187B9E81000C3A9A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F21E3371187B9E81000C3A9A /* Bird SurveysTests-Info.plist */,
+				F21E3372187B9E81000C3A9A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F21E3346187B9E81000C3A9A /* Bird Surveys */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F21E3379187B9E81000C3A9A /* Build configuration list for PBXNativeTarget "Bird Surveys" */;
+			buildPhases = (
+				F21E3343187B9E81000C3A9A /* Sources */,
+				F21E3344187B9E81000C3A9A /* Frameworks */,
+				F21E3345187B9E81000C3A9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bird Surveys";
+			productName = "Bird Surveys";
+			productReference = F21E3347187B9E81000C3A9A /* Bird Surveys.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F21E3367187B9E81000C3A9A /* Bird SurveysTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F21E337C187B9E81000C3A9A /* Build configuration list for PBXNativeTarget "Bird SurveysTests" */;
+			buildPhases = (
+				F21E3364187B9E81000C3A9A /* Sources */,
+				F21E3365187B9E81000C3A9A /* Frameworks */,
+				F21E3366187B9E81000C3A9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F21E336E187B9E81000C3A9A /* PBXTargetDependency */,
+			);
+			name = "Bird SurveysTests";
+			productName = "Bird SurveysTests";
+			productReference = F21E3368187B9E81000C3A9A /* Bird SurveysTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F21E333F187B9E81000C3A9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = birds;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Peter Gosling";
+				TargetAttributes = {
+					F21E3367187B9E81000C3A9A = {
+						TestTargetID = F21E3346187B9E81000C3A9A;
+					};
+				};
+			};
+			buildConfigurationList = F21E3342187B9E81000C3A9A /* Build configuration list for PBXProject "Bird Surveys" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F21E333E187B9E81000C3A9A;
+			productRefGroup = F21E3348187B9E81000C3A9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F21E3346187B9E81000C3A9A /* Bird Surveys */,
+				F21E3367187B9E81000C3A9A /* Bird SurveysTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F21E3345187B9E81000C3A9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F21E3363187B9E81000C3A9A /* Images.xcassets in Resources */,
+				F2A14138188F7B24003EA26C /* ybcu.mp3 in Resources */,
+				F21E3355187B9E81000C3A9A /* InfoPlist.strings in Resources */,
+				F2A14137188F7B24003EA26C /* SWFL.mp3 in Resources */,
+				F21E335E187B9E81000C3A9A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F21E3366187B9E81000C3A9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F21E3374187B9E81000C3A9A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F21E3343187B9E81000C3A9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F21E3357187B9E81000C3A9A /* main.m in Sources */,
+				F2A1412E188F75C8003EA26C /* birdAudioCall.m in Sources */,
+				F21E335B187B9E81000C3A9A /* birdsAppDelegate.m in Sources */,
+				F21E3361187B9E81000C3A9A /* birdsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F21E3364187B9E81000C3A9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F21E3376187B9E81000C3A9A /* Bird_SurveysTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F21E336E187B9E81000C3A9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F21E3346187B9E81000C3A9A /* Bird Surveys */;
+			targetProxy = F21E336D187B9E81000C3A9A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F21E3353187B9E81000C3A9A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F21E3354187B9E81000C3A9A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F21E335C187B9E81000C3A9A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F21E335D187B9E81000C3A9A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F21E3372187B9E81000C3A9A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F21E3373187B9E81000C3A9A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F21E3377187B9E81000C3A9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F21E3378187B9E81000C3A9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F21E337A187B9E81000C3A9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/petergosling/Desktop/Pete's Dev/Frameworks $(PROJECT_DIR)/Frameworks $(PROJECT_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bird Surveys/Bird Surveys-Prefix.pch";
+				INFOPLIST_FILE = "Bird Surveys/Bird Surveys-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F21E337B187B9E81000C3A9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/petergosling/Desktop/Pete's Dev/Frameworks $(PROJECT_DIR)/Frameworks $(PROJECT_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bird Surveys/Bird Surveys-Prefix.pch";
+				INFOPLIST_FILE = "Bird Surveys/Bird Surveys-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F21E337D187B9E81000C3A9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Bird Surveys.app/Bird Surveys";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bird Surveys/Bird Surveys-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Bird SurveysTests/Bird SurveysTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F21E337E187B9E81000C3A9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Bird Surveys.app/Bird Surveys";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bird Surveys/Bird Surveys-Prefix.pch";
+				INFOPLIST_FILE = "Bird SurveysTests/Bird SurveysTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F21E3342187B9E81000C3A9A /* Build configuration list for PBXProject "Bird Surveys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F21E3377187B9E81000C3A9A /* Debug */,
+				F21E3378187B9E81000C3A9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F21E3379187B9E81000C3A9A /* Build configuration list for PBXNativeTarget "Bird Surveys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F21E337A187B9E81000C3A9A /* Debug */,
+				F21E337B187B9E81000C3A9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F21E337C187B9E81000C3A9A /* Build configuration list for PBXNativeTarget "Bird SurveysTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F21E337D187B9E81000C3A9A /* Debug */,
+				F21E337E187B9E81000C3A9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F21E333F187B9E81000C3A9A /* Project object */;
+}
