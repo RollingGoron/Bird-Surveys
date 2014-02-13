@@ -16,6 +16,10 @@
 
 @synthesize latitude;
 @synthesize longitude;
+@synthesize getLocationButton;
+@synthesize managedObjectContext;
+
+
 
 - (void)viewDidLoad
 {
@@ -38,7 +42,6 @@
     locationManager = [[CLLocationManager alloc] init];
     
 }
-
 
 - (void)didReceiveMemoryWarning
 {
@@ -83,7 +86,6 @@
     //Play Audio
     [audioPlayer play];
     NSLog(@"Playing Audio");
-    
 
 }
 -(IBAction)stopAudio {
@@ -110,17 +112,17 @@
 
 - (void)locationManager:(CLLocationManager *)manager
      didUpdateLocations:(NSArray *)locations {
-    
-    
-    
-    
     //Assigns a global pointer for the "Locations" obtained from locationManager
+    
     arrayOfLocations = locations;
     
     //Set the BOOL test to true
     locationActive = TRUE;
     
+    
     //This continuously updates the locationManager collecting multiple data points
+    
+    
     CLLocation *location = [arrayOfLocations lastObject];
     NSLog(@"Latitude: %f - Longitude: %f", location.coordinate.latitude, location.coordinate.longitude);
     NSString *coordinateLocations = [arrayOfLocations componentsJoinedByString:@"\n"];
@@ -128,20 +130,21 @@
 
 }
 
--(IBAction)getLocation:(UIButton*)sender {
-    
-
-    
+-(IBAction)getLocation:(UIBarButtonItem*)sender {
     locationManager.delegate = self;
     [locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
     [locationManager startUpdatingLocation];
-    [sender setTitle:@"Stop" forState:UIControlStateNormal];
-    
+    getLocationButton.title = [NSString stringWithFormat:@"Stop"];
+
     if (locationActive == TRUE) {
         [locationManager stopUpdatingLocation];
-        [sender setTitle:@"Get Location" forState:UIControlStateNormal];
+        getLocationButton.title = [NSString stringWithFormat:@"Get Location"];
         locationActive = FALSE;
+        
     }
+    
+   
+                                   
     //This code will allow the location to be updated once
     /*
     CLLocation *location = [arrayOfLocations lastObject];

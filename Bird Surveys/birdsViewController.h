@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import <CoreLocation/CoreLocation.h>
-
+#import <CoreData/CoreData.h>
 
 
 @interface birdsViewController : UIViewController
@@ -28,6 +28,7 @@
     IBOutlet UILabel *locationsCoordinates;
     NSArray *arrayOfLocations;
     BOOL locationActive;
+    IBOutlet UIBarButtonItem *getLocationButton;
     
 
     
@@ -38,7 +39,7 @@
 -(IBAction)stopAudio;
 -(void)audioLengthTimer;
 -(IBAction)segmentedControlChange;
--(IBAction)getLocation:(UIButton*)sender;
+-(IBAction)getLocation:(UIBarButtonItem*)sender;
 -(IBAction)dumpArray;
 
 
@@ -49,6 +50,9 @@
 //Instance Variables
 @property NSNumber *latitude;
 @property NSNumber *longitude;
+@property UIBarButtonItem *getLocationButton;
+@property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
+@property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
 
 
 @end
