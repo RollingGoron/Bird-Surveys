@@ -47,6 +47,10 @@
     NSLog(@"Latitude: %@", [fetchedObjects objectAtIndex:0]);
     NSLog(@"Longtitude: %@", [fetchedObjects objectAtIndex:1]);
     
+    for (NSManagedObject *coordinatesOfUser in fetchedObjects) {
+        NSLog(@"Latitude: %@", [coordinatesOfUser valueForKey:@"latitude"]);
+        NSLog(@"Longitude: %@", [coordinatesOfUser valueForKey:@"longitude"]);
+    }
     
     // Override point for customization after application launch.
     return YES;
